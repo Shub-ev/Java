@@ -45,7 +45,6 @@ public class _14_switch_ {
         System.out.println(res);
 
         // switch now returns
-        String res2;
         res = switch (day) {
             case "monday", "saturday" -> "Hello";
             case "sunday", "wednesday" -> "Bye";
