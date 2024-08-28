@@ -8,6 +8,13 @@ public class _05_typecasting_conversion {
 
         byte byt2 = (byte) 1234; // if number if greater than 256 then number%256 i.e. 1234/256
 
+
+        // ******  type promotion  ******
+        byte x = 10;
+        byte y = 30;
+
+        System.out.println(x*y); // as this goes out of the range of byte this is promoted to int
+
         System.out.println(a);
         System.out.println(byt);
         System.out.println(byt2);
