@@ -1,6 +1,7 @@
 // ******* String object *******
 // in java String is not a primitive datatype but a Class 
 // string objects are immutable and can not be modified
+// as string is a Class and its use is through object and default value of objects is **** null **** string also
 
 import java.util.Scanner;
 
