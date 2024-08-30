@@ -17,5 +17,16 @@ public class _15_loops {
         for(int j = 10; j > 0; j--){
             System.out.print(j + " ");
         }
+
+        // advanced for loop for arrays
+        int arr[][] = new int[3][3];
+        System.out.println();
+        for(int n[]: arr){
+            for(int m : n){
+                System.out.print(m + " ");
+            }
+            System.out.println();
+        }
+
     }
 }
