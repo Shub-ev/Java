@@ -1,6 +1,6 @@
 class Person{
-    private String name;  // here instantiated vars are private hence no outer class can access it
-    private int age;
+    // private String name;  // here instantiated vars are private hence no outer class can access it
+    // private int age;
 
     Person(){
         System.out.println("Constructor call");
