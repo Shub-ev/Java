@@ -19,6 +19,8 @@ class Calculator{
     // instead of initializing static var here we will initialize it in static block
     static int comm; // this is static variable which will be stared and will remain same for all objects
 
+    Calculator() {}; // default
+
     Calculator(int num1, int num2){  // in java each method/function have its own stack while execution
         this.a = num1;
         this.b = num2;

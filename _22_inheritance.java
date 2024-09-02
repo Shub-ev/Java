@@ -5,6 +5,8 @@
 // B. Multilevel    (a -> b -> c)
 // C. Heirarchical
 
+// X. Multiple Inheritance (can not be implemented)
+
 
 
 // all these classes are compiled to independent files
@@ -14,7 +16,7 @@ class Living{ //****  Base Class  *****         //default access specifier
     }
 }
 
-class Animal extends Living{    //****  Child Class (level 1) ***** 
+class Animal extends Living{    //****  Child Class (level 1) ****
     String clan;
 
     Animal(String animal){
@@ -27,7 +29,7 @@ class Animal extends Living{    //****  Child Class (level 1) *****
     }
 }
 
-class Human extends Animal{      //****  Child Class (level 2) ***** (this is multilevel)
+class Human extends Animal{      //****  Child Class (level 2) *****    (this is multilevel)
     String gender;
 
     Human(String gender){
@@ -42,8 +44,8 @@ class Human extends Animal{      //****  Child Class (level 2) ***** (this is mu
 
 public class _22_inheritance {
     public static void main(String args[]){
-        Living l1 = new Living(); // implimenting base/parent class Living
-        l1.iAm();   // implement base class method
+        Living l1 = new Living();    // implimenting base/parent class Living
+        l1.iAm();     // implement base class method
 
         Animal am = new Animal("Human");    // implemented class which is derived from base class
         am.iAm();
