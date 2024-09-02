@@ -1,4 +1,8 @@
 // *****  Interface  *****
+// types of interface
+// A. Normal Interface          (one or more than one abstract methods)
+// B. Functional Interface      (only one abstract method)
+// C. Marker Interface          (interface with no methods)
 
 interface A{  // interface is not class   // interface gives us structure of the class
 
