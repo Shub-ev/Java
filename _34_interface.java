@@ -25,7 +25,7 @@ interface Y extends X{      // interface can also ***** extend ***** another int
 class B implements A, X{   // implement interface       // we can implement more that one interfaces (but in abstract class we can extend only one class) 
     // now here we have to implement all the methods from the interface else make class Abstract
     public void show(){
-        System.out.println("Show method");
+        System.out.println("Show method"); 
     }
     public void tr(){
         System.out.println("tr method");
