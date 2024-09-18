@@ -1,6 +1,9 @@
-class Try{
-    public static void main(String args[]){
-        byte b = -19;
-        System.out.println(+ b);
+class Try {
+    public static void main(String args[]) {
+        byte b = -1;
+        for(int i = 0; i < 8; i++){
+            System.out.println(b);
+            b = (byte) (b >> 1);
+        }
     }
 }
