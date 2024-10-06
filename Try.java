@@ -1,5 +1,5 @@
 class A{
-    int a;
+    protected int a;
 
     A(){
         System.out.println("Inside Constructor!");

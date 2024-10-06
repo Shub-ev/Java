@@ -1,6 +1,6 @@
 package _25_package_;
 
-public class File1 {
+class File1 {
     String file_name = "file1";
 
     public void f1(){  // use public as by default it is default access specifier which have infile access 
