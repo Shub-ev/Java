@@ -3,7 +3,14 @@
 // A. Compiletime Error
 // B. Runtime Error (exceptions)
 // C. Logical Error
+// D. Syntactical Error
 
+// key words associated with execption handling
+// 1.try  2.catch  3.finally  4.throw  5.throws
+
+// all exception types are subclass of Throwable class
+// throwable class have 2  main subclass
+// 1.Exception 2. Error (creates exceptions associated with java env. ex.stack overflow)
 
 // Object Class -> Throwable Class -> 1. Error      2. Exception
 // 1. Error -> we cannot deal with errors (outofmemory)
