@@ -1,5 +1,10 @@
 package Threads;
 
+// Threads can be created using 2 ways
+
+// 1. Implement Runnable Interface
+// 2. Extend Thread class
+
 class RunnableClass implements Runnable {
     @Override
     public void run() {

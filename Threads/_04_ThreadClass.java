@@ -1,12 +1,10 @@
 package Threads;
 
-class RunnableClass implements Runnable{
-    Thread t;
+class ThreadClass extends Thread{
 
-    public RunnableClass() {
-        t = new Thread(this, "Demo Thread");
-        System.out.println("Child Thread: " + t);
-        t.start();
+    public ThreadClass() {
+        super("Demo Thread");
+        System.out.println("Child Thread: "+this);
     }
 
     @Override
@@ -25,9 +23,13 @@ class RunnableClass implements Runnable{
     }
 }
 
-public class _03_Runnable_Thread {
+public class _04_ThreadClass {
     public static void main(String[] args) {
-        new RunnableClass();
+        Thread thr = new ThreadClass();
+
+        System.out.println(thr);
+
+        thr.start();
 
         Thread currThread = Thread.currentThread();
         System.out.println(currThread);
@@ -42,6 +44,5 @@ public class _03_Runnable_Thread {
         }
 
         System.out.println("Exiting Main Thread!");
-
     }
 }
