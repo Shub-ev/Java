@@ -9,5 +9,6 @@ public class File2 {
     public void tryF1(){
         File1 f1 = new File1();
         String temp = f1.file_name;
+        System.out.println(temp);
     }
 }
