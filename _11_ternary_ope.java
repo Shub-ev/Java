@@ -5,6 +5,8 @@ public class _11_ternary_ope {
         // if Exp1 is true then result of expression is the value of Exp2 
         // if Exp1 is false then result of expression is the value of Exp3
         String a = "Hello";
-        System.out.println((10 < 5 ? a : "Bye"));
+        int c = 10;
+        System.out.println((c < 5 ? a = "Bye" : "Bye"));
+        System.out.println(a);
     }
 }

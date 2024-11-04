@@ -3,7 +3,7 @@
 // string objects are immutable and can not be modified
 // as string is a Class and its use is through object and default value of objects is **** null **** string also
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
 public class _18_string {
     public static void main(String args[]){
@@ -27,7 +27,7 @@ public class _18_string {
         String str2 = "hello";  // as there is string constant pool(heap memory) where all unique strings are stored, as hello is already in 
         //                      // string constant pool hence same string address is used by str2 in stack
         if(str1 == str2){
-            System.out.println(new Boolean(true));
+            // System.out.println(new Boolean(true));   // depricated
         }
 
 

@@ -61,7 +61,7 @@ class Calculator{
 public class _16_class_object {
     public static void main(String args[]){
         Calculator cal = new Calculator(10, 20);
-        System.out.println(cal.comm); // static var will be same for all objs but it shouldn't be accessed by obj name instead
+        // System.out.println(cal.comm); // static var will be same for all objs but it shouldn't be accessed by obj name instead
         System.out.println(Calculator.comm); // static vars should be accessed using Class itself
         System.out.println(cal.add());
         // cal.staticMembers(); // this is possible but avoided
