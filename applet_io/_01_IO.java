@@ -1,7 +1,9 @@
 package applet_io;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.Reader;
 
 // import java.io.BufferedInputStream;
@@ -39,7 +41,11 @@ import java.io.Reader;
 // if required you can wrap these within character based streams
 
 public class _01_IO {
-    // BufferedReader for console input
-    BufferedReader br = new BufferedReader(Reader(System.in));
+    public static void main(String[] args) throws IOException {
+        // BufferedReader for console input
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String str = br.readLine();
 
+        System.out.println(str);
+    }
 }
