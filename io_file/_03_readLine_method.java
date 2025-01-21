@@ -1,4 +1,4 @@
-package applet_io;
+package io_file;
 
 import java.io.BufferedReader;
 import java.io.IOException;
