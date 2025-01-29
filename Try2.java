@@ -1,8 +1,8 @@
-public class Try2 {
-    public static void main(String args[]){
+import java.util.*;
+import java.sql.*;
 
-        A a = new A();
-
-        System.out.println();
+class Try2{
+    public static void main(String[] args) {
+        Date d = new Date();
     }
 }
