@@ -1,65 +1,41 @@
+abstract class Person{
+    String name;
+    int age;
 
-import java.util.LinkedList;
-import java.util.Queue;
+    Person(){};
 
-public class Try{
-    public static void main(String[] args) {
-        int[][] edges = {{0,1}, {0,2}, {1,2}, {2,3}};
-
-        Graph g = new Graph(5);
-        g.addEdges(false, edges);
-
-        g.displayGraph();
-        g.bfs();
+    Person(String name, int age){
+        this.name = name;
+        this.age = age;
     }
 }
 
-class Graph{
-    private final int[][] adjMatrix;
+class Student extends Person {
+    int roll;
+    int marks;
 
-    public Graph(int nodes){
-        adjMatrix = new int[nodes][nodes];
+    Student(String name, int age, int roll, int marks){
+        // super(name, age);
+        this.roll = roll;
+        this.marks = marks;
     }
 
-    public void addEdges(boolean isDirected, int[]... edges){
-        for(int[] arr: edges){
-            int n = arr[0];
-            int m = arr[1];
-
-            adjMatrix[n][m] = 1;
-            if(!isDirected) adjMatrix[m][n] = 1;
-        }
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Student{");
+        sb.append("roll=").append(roll);
+        sb.append(", marks=").append(marks);
+        sb.append(", name=").append(name);
+        sb.append(", age=").append(age);
+        sb.append('}');
+        return sb.toString();
     }
+}
 
-    public void displayGraph(){
-        for(int[] arr: adjMatrix){
-            for(int num : arr){
-                System.out.print(num + " ");
-            }
-            System.out.println();
-        }
+class Try{
+    public static void main(String[] args) {
+        Student s = new Student("Shubham", 21, 2253013, 99);
+        System.out.println(s);
     }
-
-    public void bfs(){
-        boolean[] isVisited = new boolean[adjMatrix.length];
-        Queue<Integer> queue = new LinkedList<>();
-
-        for(int i = 0; i < adjMatrix.length; i++){
-            if(!isVisited[i]){
-                queue.add(i);
-                isVisited[i] = true;
-
-                while(!queue.isEmpty()){
-                    int node = queue.poll();
-                    System.out.print(node + " ");
-                    for(int arr: adjMatrix[node]){
-                        if(!isVisited[arr]){
-                            queue.add(arr);
-                            isVisited[arr]= true;
-                        }
-                    }
-                }
-            }
-        }
-    }
-} 
+}
